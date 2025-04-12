@@ -1,0 +1,17 @@
+html {
+    font-family: monospace;
+    font-size: 1em;
+    color: #FFFF;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: navy;
+    text-align: center;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+}
