@@ -1,17 +1,62 @@
 html {
     font-family: monospace;
-    font-size: 1em;
+    font-size: 1.5em;
     color: #FFFF;
 }
 
 body {
+    background-color: navy;
     display: flex;
+}
+
+h2 {
+    margin: 2%;
+}
+
+h3 {
+    margin: 2%;
+}
+
+.profile-pic {
+    width: 15vw;
+    height: 15vw;
+    margin-left: 2%;
+}
+
+.banner {
+    width: 60vw;
+    height: 15vw;
+    margin-left: 6%;
+}
+
+.card {
     flex-direction: column;
     justify-content: center;
-    background-color: navy;
-    text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+	transition: 0.3s;
+	margin: 5%;
+	float: none;
+	margin-bottom: 10px;
+	background-color: #000000;
+	margin-top: 20px;
+}
+
+.profile {
+    flex-direction: row;
+}
+
+.card p {
+    margin: 2%;
 }
 
 header {
     font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    display: flex;
+    font-family: monospace;
+    font-size: 0.75em;
+    justify-content: center;
+    color: #ffffff;
 }
