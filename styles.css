@@ -30,23 +30,63 @@ h3 {
 }
 
 .card {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-	transition: 0.3s;
-	margin: 5%;
-	float: none;
-	margin-bottom: 10px;
-	background-color: #000000;
-	margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+    margin: 5%;
+    float: none;
+    margin-bottom: 10px;
+    background-color: #000000;
+    margin-top: 20px;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin: 0 5%;
+}
+
+.card-row .card {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1%;
+    min-width: 300px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-row .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    .card-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-row .card {
+        width: 90%;
+    }
+}
+
+
+.card p {
+    margin: 2%;
 }
 
 .profile {
     flex-direction: row;
-}
-
-.card p {
-    margin: 2%;
 }
 
 header {
